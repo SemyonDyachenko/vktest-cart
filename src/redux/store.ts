@@ -5,7 +5,7 @@ import productsReducer from './productSlice';
 export const store = configureStore({
     reducer: {
         products: productsReducer,
-        // Другие редукторы могут быть добавлены здесь
+   
     },
 });
 
