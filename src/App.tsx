@@ -47,7 +47,7 @@ function App() {
                      <ul>
                          {products.map(product => (
                              <li className="my-1 text-gray-600 text-md " key={product.id}>
-                                - {product.title} <span className="text-gray-700 font-medium">x {product.quantity} - {product.price * product.quantity}</span>
+                                - {product.title} <span className="text-gray-700 font-medium">x {product.quantity} - {(product.price * product.quantity).toFixed(2)}</span>
                              </li>
                          ))}
                      </ul>
